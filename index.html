@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Elderly Care Assistant</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <div class="logo">🤖 ElderCare AI</div>
+    <button onclick="showEmergency()">🚨 Emergency</button>
+</header>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#medicine">Medicine</a>
+    <a href="#health">Health</a>
+    <a href="#doctor">Doctor</a>
+    <a href="#weather">Weather</a>
+    <a href="#voice">Voice Assistant</a>
+</nav>
+
+<section id="home" class="hero">
+    <div>
+        <h1>AI Elderly Care Assistant</h1>
+        <p>Smart and simple assistance for elderly people.</p>
+        <button onclick="speakWelcome()">🔊 Start Assistant</button>
+    </div>
+</section>
+
+<section class="dashboard">
+    <h2>Today's Dashboard</h2>
+
+    <div class="cards">
+
+        <div class="card" id="medicine">
+            <h3>💊 Medicine</h3>
+            <p>Next medicine: <b>10:00 AM</b></p>
+            <button onclick="medicineTaken()">Medicine Taken</button>
+            <p id="medicineStatus"></p>
+        </div>
+
+        <div class="card" id="health">
+            <h3>❤️ Health</h3>
+            <p>Blood Pressure: <b>120/80</b></p>
+            <p>Blood Sugar: <b>105 mg/dL</b></p>
+            <button onclick="healthCheck()">Check Health</button>
+        </div>
+
+        <div class="card" id="doctor">
+            <h3>👨‍⚕️ Doctor Appointment</h3>
+            <p>Next appointment</p>
+            <b>25 September, 11:00 AM</b>
+            <button onclick="appointment()">View Appointment</button>
+        </div>
+
+        <div class="card" id="weather">
+            <h3>🌤️ Weather</h3>
+            <p>Temperature: <b>28°C</b></p>
+            <p>Weather: Partly Cloudy</p>
+        </div>
+
+    </div>
+</section>
+
+<section id="voice" class="voice-section">
+    <h2>🎙️ AI Voice Assistant</h2>
+    <p>Ask the assistant for help.</p>
+
+    <button onclick="startVoice()">🎤 Speak</button>
+
+    <p id="voiceOutput">Assistant is ready...</p>
+</section>
+
+<section class="features">
+    <h2>AI Features</h2>
+
+    <div class="feature-list">
+        <div>🔔 Medicine Reminders</div>
+        <div>❤️ Health Monitoring</div>
+        <div>👨‍⚕️ Doctor Notifications</div>
+        <div>🚨 Emergency Alerts</div>
+        <div>🎙️ Voice Assistance</div>
+        <div>🌤️ Weather Updates</div>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 AI Elderly Care Assistant | College Phase 3 Project</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
